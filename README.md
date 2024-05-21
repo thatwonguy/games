@@ -43,7 +43,5 @@ Both the python and C++ versions should provide a similar *breakout* gaming expe
 ---
 ## Testing github pages and github actions:
 
-- https://thatwonguy.github.io/thatwonguy.github.io/breakout.ipynb
-
-- https://thatwonguy.github.io/breakout.html
+- https://thatwonguy.github.io/
 
