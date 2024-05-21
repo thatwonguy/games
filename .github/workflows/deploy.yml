@@ -8,22 +8,29 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install jupyter voila
+
     - name: Deploy with Voila
       run: |
-        voila breakout.ipynb --no-browser --port=8000
+        voila notebooks/breakout.ipynb --no-browser --strip_sources=True --template=materialdesign
+        mkdir -p output
+        cp -r voila/rendered/* output/
+      
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: output
         publish_branch: gh-pages
-        publish_dir: ./voila/rendered
