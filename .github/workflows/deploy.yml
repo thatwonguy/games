@@ -24,13 +24,13 @@ jobs:
 
     - name: Deploy with Voila
       run: |
-        voila notebooks/breakout.ipynb --no-browser --strip_sources=True --template=materialdesign
+        voila breakout.ipynb --no-browser --strip_sources=True --template=materialdesign
         mkdir -p output
         cp -r voila/rendered/* output/
-      
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: output
         publish_branch: gh-pages
+        publish_dir: output
