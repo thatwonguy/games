@@ -20,3 +20,22 @@ conda create --name python39 python=3.9
 ```
 
 ## Prerequisites for C++
+1. Install the SFML (Simple Fast MultiMedia Library), good for grahpics, sound, handling inputs.
+    - download from the [official SFML site](https://www.sfml-dev.org/)
+2. On windows use the following to build and run the game file io bash terminal:
+```
+g++ -std=c++11 -o breakout breakout.cpp -lsfml-graphics -lsfml-window -lsfml-system
+./breakout
+```
+3. On Mac use the following to run and build the file in bash terminal:
+```
+g++ -std=c++11 -o breakout breakout.cpp -lsfml-graphics -lsfml-window -lsfml-system
+./breakout
+```
+4. On linux use the following to run and build the file in bash terminal:
+```
+g++ -std=c++11 -o breakout breakout.cpp -lsfml-graphics -lsfml-window -lsfml-system
+./breakout
+```
+Make sure the SFML is correctly installed and the library paths are set up as needed.  
+Both the python and C++ versions should provide a similar *breakout* gaming experience!
