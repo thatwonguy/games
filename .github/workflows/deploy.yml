@@ -3,7 +3,7 @@ name: Deploy Jupyter Notebook to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   deploy:
