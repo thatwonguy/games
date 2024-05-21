@@ -44,7 +44,7 @@ Both the python and C++ versions should provide a similar *breakout* gaming expe
 
 ---
 ## Testing github pages and github actions:
-When utilized from the settings --> pages location, a CI/CD pipeline is in effect and any updates to the branch will update the readme which will then update the website. The `deploy.yml` contains the instructions for github to read from for the deployment. It is located in `root/.github/workflows/deploy.yml`
+When utilized from the settings --> pages location, a CI/CD pipeline is in effect and any updates to the branch will update the readme which will then update the website. The `deploy.yml` contains the instructions for github to read from for the deployment. It is located in `/root/.github/workflows/deploy.yml`
 
 - https://thatwonguy.github.io/
 
