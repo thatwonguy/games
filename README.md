@@ -39,3 +39,11 @@ g++ -std=c++11 -o breakout breakout.cpp -lsfml-graphics -lsfml-window -lsfml-sys
 ```
 Make sure the SFML is correctly installed and the library paths are set up as needed.  
 Both the python and C++ versions should provide a similar *breakout* gaming experience!
+
+---
+## Testing github pages and github actions:
+
+- https://thatwonguy.github.io/thatwonguy.github.io/breakout.ipynb
+
+- https://thatwonguy.github.io/breakout.html
+
