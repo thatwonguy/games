@@ -1,5 +1,7 @@
 # games
-This repo is created as a place to get those github achievements by modifying the contributions.md file by adding your username and link to your github, feel free to submit pull requests, Co-auther a commit into "contributions.md" etc.
+This `gh-pages` branch within this repo is being used to test github page deployment from a branch. 
+
+is created as a place to get those github achievements by modifying the contributions.md file by adding your username and link to your github, feel free to submit pull requests, Co-auther a commit into "contributions.md" etc.
 
 More advanced contributions are also welcome.Start off by opening up an issue and lets have a discussion and start devying up the work to see how we can improve and create some games and keep adding features.
 
@@ -42,6 +44,7 @@ Both the python and C++ versions should provide a similar *breakout* gaming expe
 
 ---
 ## Testing github pages and github actions:
+When utilized from the settings --> pages location, a CI/CD pipeline is in effect and any updates to the branch will update the readme which will then update the website.
 
 - https://thatwonguy.github.io/
 
